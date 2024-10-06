@@ -1,0 +1,59 @@
+@media (max-width: 1400px) {
+  .wrapper__navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+@media (max-width: 1200px) {
+  .wrapper__list {
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+
+  .wrapper__list-card {
+    width: 40%;
+    margin-bottom: 100px;
+  }
+
+}
+
+@media print {
+  .print {
+    display: flex;
+  }
+
+  .wrapper {
+    display: none;
+  }
+  
+}
+@media (max-width: 600px) {
+  .wrapper__navbar-basket {
+      padding: 15px; /* Увеличение отступов на мобильных */
+  }
+
+  .wrapper__navbar-top, .wrapper__navbar-bottom {
+      flex-direction: column; /* Вертикальное расположение элементов */
+      align-items: flex-start; /* Выравнивание по левому краю */
+  }
+
+  .wrapper__navbar-close {
+      margin-top: 10px; /* Отступ сверху для кнопки закрытия */
+  }
+
+  .wrapper__navbar-totalprice {
+      font-size: 16px; /* Уменьшение шрифта для мобильных */
+  }
+}
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 600px) {
+  .container.wrapper__list {
+      padding: 5px; /* Уменьшение отступов на мобильных */
+  }
+
+  .wrapper__list > div {
+      flex: 1 1 100%; /* Элементы занимают 100% ширины на мобильных */
+      margin: 5px 0; /* Уменьшение отступов между элементами */
+  }
+}
